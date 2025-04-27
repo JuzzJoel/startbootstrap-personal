@@ -641,7 +641,7 @@
                                             <h2 class="fw-bolder">ProjectName </h2>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                             <a href="#" class="btn btn-outline-primary btn-lg active" role="button" aria-pressed="true">View Project</a>
-                                        </div>
+                                        </div> 
                                         <img class="img-fluid" src="/dist/assets/project_one.png" alt="..." />
                                     </div>
                                 </div>
@@ -690,10 +690,10 @@
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
                                 <form id="contactForm" data-sb-form-api-token="API_TOKEN"
-                                    action="mailto:joelolajiire@gmail.com" method="post">
+                                    action="https://formsubmit.co/7e9f7eff1c56245edef4fed0e9c0cc07" method="POST">
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" name="name" type="text"
+                                        <input class="form-control" id="name" name="Name" required type="text"
                                             placeholder="Enter your name..." data-sb-validations="required" />
                                         <label for="name">Full name</label>
                                         <div class="invalid-feedback" data-sb-feedback="name:required">A name is
@@ -701,7 +701,7 @@
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" name="email" type="email"
+                                        <input class="form-control" id="email" name="Email" required type="email"
                                             placeholder="name@example.com" data-sb-validations="required,email" />
                                         <label for="email">Email address</label>
                                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is
@@ -711,7 +711,7 @@
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" name="phone" type="tel"
+                                        <input class="form-control" id="phone" name="Phone-Number" required type="tel"
                                             placeholder="(123) 456-7890" data-sb-validations="required" />
                                         <label for="phone">Phone number</label>
                                         <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number
@@ -719,7 +719,7 @@
                                     </div>
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" name="message" type="text"
+                                        <textarea class="form-control" id="message" name="Message" required type="text"
                                             placeholder="Enter your message here..." style="height: 10rem"
                                             data-sb-validations="required"></textarea>
                                         <label for="message">Message</label>
@@ -733,10 +733,6 @@
                                     <div class="d-none" id="submitSuccessMessage">
                                         <div class="text-center mb-3">
                                             <div class="fw-bolder">Form submission successful!</div>
-                                            To activate this form, sign up at
-                                            <br />
-                                            <a
-                                                href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                         </div>
                                     </div>
                                     <!-- Submit error message-->
@@ -747,8 +743,9 @@
                                         <div class="text-center text-danger mb-3">Error sending message!</div>
                                     </div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><input class="btn btn-primary btn-lg disabled" id="submitButton"
-                                            type="submit" value="Submit"></div>
+                                     <input type="hidden" name="_captcha" value="false">
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton"
+                                            type="submit">Submit</button></div>
                                 </form>
                             </div>
                         </div>
