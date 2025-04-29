@@ -599,11 +599,10 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   background-position:center center;
   background-size: cover;
-  min-height: 200px;
-  min-width:200px;
+ 
 
 
 }
